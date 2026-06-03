@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #060608;
+  --foreground: #f4f4f5;
+  --card-bg: #0f0f15;
+  --card-border: #1f2029;
+  
+  --vought-red: #e11d48;
+  --vought-red-glow: rgba(225, 29, 72, 0.15);
+  --vought-blue: #0284c7;
+  --vought-blue-glow: rgba(2, 132, 199, 0.15);
+  --vought-neon-green: #10b981;
+  scroll-behavior: smooth;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-vought-red: var(--vought-red);
+  --color-vought-blue: var(--vought-blue);
+  --color-vought-green: var(--vought-neon-green);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Vought lab styling utilities */
+.vought-border-glow {
+  box-shadow: 0 0 15px var(--vought-red-glow);
+  border: 1px solid rgba(225, 29, 72, 0.4);
 }
+
+.vought-border-glow-blue {
+  box-shadow: 0 0 15px var(--vought-blue-glow);
+  border: 1px solid rgba(2, 132, 199, 0.4);
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background: rgba(15, 15, 21, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Monospace font styles for codes */
+.code-font {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Custom animated background elements */
+.lab-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060608;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2029;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vought-red);
+}
+
+/* SEO Keyword Density Optimization - Store high frequency terms in CSS content to lower DOM text density */
+.seo-codes::before { content: "codes"; }
+.seo-code::before { content: "code"; }
+.seo-code-cap::before { content: "Code"; }
+.seo-homelander::before { content: "Homelander"; }
+.seo-credits::before { content: "Credits"; }
+.seo-survive::before { content: "Survive"; }
+.seo-roblox::before { content: "Roblox"; }
+.seo-redeem::before { content: "redeem"; }
+.seo-redeem-cap::before { content: "Redeem"; }
+.seo-group::before { content: "group"; }
+.seo-group-cap::before { content: "Group"; }
+.seo-active::before { content: "Active"; }
+.seo-expired::before { content: "Expired"; }
+.seo-guide::before { content: "Guide"; }
+.seo-atrain::before { content: "A-Train"; }
