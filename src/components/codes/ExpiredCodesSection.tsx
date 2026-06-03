@@ -9,7 +9,7 @@ export function ExpiredCodesSection({ codes }: ExpiredCodesSectionProps) {
     <section 
       id="expired"
       aria-labelledby="expired-codes-heading" 
-      className="border-t border-card-border px-4 py-6 sm:px-6"
+      className="border-t border-card-border px-6 py-10 sm:px-8"
     >
       <details className="group border border-card-border rounded bg-card-bg/20 overflow-hidden">
         <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-xs uppercase tracking-wider text-zinc-400 hover:bg-card-bg/40 select-none">

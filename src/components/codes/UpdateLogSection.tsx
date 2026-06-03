@@ -57,9 +57,9 @@ export function UpdateLogSection() {
     <section 
       id="update-log"
       aria-labelledby="update-log-heading" 
-      className="border-t border-card-border px-4 py-6 sm:px-6"
+      className="border-t border-card-border px-6 py-10 sm:px-8"
     >
-      <div className="flex items-center gap-2 mb-4">
+      <div className="flex items-center gap-2 mb-6">
         <h2 
           id="update-log-heading" 
           className="text-xs font-bold uppercase tracking-wider text-vought-red"
@@ -70,7 +70,7 @@ export function UpdateLogSection() {
       </div>
 
       {/* Timeline Layout */}
-      <div className="relative border-l border-card-border ml-2 pl-4 space-y-4">
+      <div className="relative border-l border-card-border ml-2 pl-5 space-y-5">
         {LOGS.map((log, idx) => (
           <div key={idx} className="relative text-xs">
             {/* Dot indicator */}

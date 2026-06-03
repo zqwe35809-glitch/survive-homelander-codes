@@ -48,12 +48,12 @@ export function RelatedTopicsSection() {
     <section 
       id="related-topics"
       aria-labelledby="related-topics-heading" 
-      className="border-t border-card-border px-4 py-6 sm:px-6"
+      className="border-t border-card-border px-6 py-10 sm:px-8"
     >
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {/* Lore & Survival Questions (Left/Center 2 cols) */}
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center gap-2 mb-6">
             <h2 
               id="related-topics-heading" 
               className="text-xs font-bold uppercase tracking-wider text-vought-blue"

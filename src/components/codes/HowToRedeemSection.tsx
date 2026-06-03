@@ -3,9 +3,9 @@ export function HowToRedeemSection() {
     <section 
       id="how-to-redeem"
       aria-labelledby="how-to-redeem-heading" 
-      className="border-t border-card-border px-4 py-6 sm:px-6"
+      className="border-t border-card-border px-6 py-10 sm:px-8"
     >
-      <div className="flex items-center gap-2 mb-4">
+      <div className="flex items-center gap-2 mb-6">
         <h2 
           id="how-to-redeem-heading" 
           className="text-xs font-bold uppercase tracking-wider text-vought-blue"
@@ -16,9 +16,9 @@ export function HowToRedeemSection() {
       </div>
 
       {/* 4 Steps Section */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {/* Step 1 */}
-        <div className="rounded border border-card-border bg-card-bg/40 p-4">
+        <div className="rounded border border-card-border bg-card-bg/40 p-5">
           <div className="flex h-6 w-6 items-center justify-center rounded bg-vought-blue/10 text-xs font-bold text-vought-blue border border-vought-blue/20 mb-2">
             1
           </div>
@@ -63,7 +63,7 @@ export function HowToRedeemSection() {
       </div>
 
       {/* Troubleshooting Sub-box */}
-      <div className="mt-4 rounded border border-rose-950/30 bg-rose-950/5 p-4">
+      <div className="mt-6 rounded border border-rose-950/30 bg-rose-950/5 p-5">
         <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2">
           Troubleshooting: Why is the <span className="seo-code" /> not working?
         </h4>

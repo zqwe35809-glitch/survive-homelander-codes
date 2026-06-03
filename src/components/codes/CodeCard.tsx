@@ -27,7 +27,7 @@ export function CodeCard({ codeItem }: CodeCardProps) {
   return (
     <div
       onClick={handleCopy}
-      className={`group relative flex cursor-pointer flex-col justify-between rounded border transition-all duration-300 p-4 select-none
+      className={`group relative flex cursor-pointer flex-col justify-between rounded-lg border transition-all duration-300 p-5 select-none
         ${copied 
           ? "border-emerald-500/50 bg-emerald-950/10 shadow-[0_0_15px_rgba(16,185,129,0.1)]" 
           : "border-card-border bg-card-bg hover:border-vought-red/50 hover:shadow-[0_0_15px_rgba(225,29,72,0.1)] hover:scale-[1.01]"

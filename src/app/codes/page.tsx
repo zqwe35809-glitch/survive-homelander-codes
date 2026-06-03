@@ -56,23 +56,26 @@ export default async function CodesPage() {
 
       <main className="min-h-screen bg-background lab-grid">
         <div className="mx-auto max-w-7xl border-x border-card-border bg-[#0a0a0f]/60 min-h-screen shadow-2xl">
-          <article className="pb-16">
-            {/* Header section (height <= 64px) */}
-            <PageHeader
-              activeCount={activeCodes.length}
-              lastUpdated="2026-06-03"
-            />
+          <article className="pb-24">
+            {/* Hero zone with Homelander silhouette background */}
+            <div className="hero-bg-overlay">
+              {/* Header section (height <= 64px) */}
+              <PageHeader
+                activeCount={activeCodes.length}
+                lastUpdated="2026-06-03"
+              />
 
-            {/* Alert bar (height <= 40px) */}
-            <InlineAlert
-              message="Redeeming codes requires joining the"
-              linkText="Sushi Deluxe Roblox group"
-              linkHref="https://www.roblox.com/groups/33719001/Sushi-Deluxe"
-              suffix="first."
-            />
+              {/* Alert bar (height <= 40px) */}
+              <InlineAlert
+                message="Redeeming codes requires joining the"
+                linkText="Sushi Deluxe Roblox group"
+                linkHref="https://www.roblox.com/groups/33719001/Sushi-Deluxe"
+                suffix="first."
+              />
 
-            {/* Active Codes List (Visible immediately, at least 3 cards above the fold) */}
-            <ActiveCodesSection codes={activeCodes} />
+              {/* Active Codes List (Visible immediately, at least 3 cards above the fold) */}
+              <ActiveCodesSection codes={activeCodes} />
+            </div>
 
             {/* Steps Guide & Troubleshooting */}
             <HowToRedeemSection />

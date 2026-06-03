@@ -53,9 +53,9 @@ export function FAQSection() {
     <section 
       id="faq"
       aria-labelledby="faq-heading" 
-      className="border-t border-card-border px-4 py-6 sm:px-6"
+      className="border-t border-card-border px-6 py-10 sm:px-8"
     >
-      <div className="flex items-center gap-2 mb-4">
+      <div className="flex items-center gap-2 mb-6">
         <h2 
           id="faq-heading" 
           className="text-xs font-bold uppercase tracking-wider text-vought-red"
@@ -66,7 +66,7 @@ export function FAQSection() {
       </div>
 
       {/* Accordions Group */}
-      <div className="space-y-2">
+      <div className="space-y-3">
         {FAQ_ITEMS.map((item, idx) => (
           <details 
             key={idx} 

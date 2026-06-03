@@ -10,10 +10,10 @@ export function ActiveCodesSection({ codes }: ActiveCodesSectionProps) {
     <section 
       id="active-codes"
       aria-labelledby="active-codes-heading" 
-      className="px-4 py-4 sm:px-6"
+      className="px-6 py-8 sm:px-8"
     >
       {/* Visual Section Title */}
-      <div className="flex items-center gap-2 mb-3">
+      <div className="flex items-center gap-2 mb-5">
         <h2 
           id="active-codes-heading" 
           className="text-xs font-bold uppercase tracking-wider text-vought-red"
@@ -25,7 +25,7 @@ export function ActiveCodesSection({ codes }: ActiveCodesSectionProps) {
 
       {/* Grid of Codes - Scaled to 4-5 columns for full-screen layout */}
       {codes.length > 0 ? (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {codes.map((code) => (
             <CodeCard key={code.id} codeItem={code} />
           ))}

@@ -12,9 +12,9 @@ export function PageHeader({ activeCount, lastUpdated }: PageHeaderProps) {
   });
 
   return (
-    <header className="flex h-14 items-center justify-between border-b border-card-border px-4 sm:px-6">
+    <header className="flex h-16 items-center justify-between border-b border-card-border px-6 sm:px-8">
       {/* Primary Semantic H1 */}
-      <h1 className="text-lg font-bold tracking-tight text-white sm:text-xl">
+      <h1 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
         Survive Homelander Codes
       </h1>
 

@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Survive Homelander Wiki",
   description: "The ultimate database for Roblox Survive Homelander.",
+  verification: {
+    google: "8kFDQByiDS2Io6lfLFUaJj3aTscWuNMm-Je6xY3OUJg",
+  },
 };
 
 export default function RootLayout({
