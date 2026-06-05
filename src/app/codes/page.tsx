@@ -9,7 +9,8 @@ import { FAQSection } from "@/components/codes/FAQSection";
 import { RelatedTopicsSection } from "@/components/codes/RelatedTopicsSection";
 import { UpdateLogSection } from "@/components/codes/UpdateLogSection";
 import { getCodes } from "@/lib/codes";
-import { faqSchema, breadcrumbSchema, gameSchema } from "@/lib/schema/codes";
+import { breadcrumbSchema, gameSchema } from "@/lib/schema/codes";
+
 
 // ISR setup: Revalidate this page every 6 hours (21600 seconds)
 export const revalidate = 21600;
@@ -41,10 +42,6 @@ export default async function CodesPage() {
   return (
     <>
       {/* Injecting SEO structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
